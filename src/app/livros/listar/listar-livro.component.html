@@ -17,8 +17,8 @@
             </th>
         </tr>
         <!-- ngFor ele funciona como um for, um laço de repeticao, para cada tarefa ele realiza um bloco de atividade -->
-        <tr *ngFor="let livro of livros">
-            <td>
+        <tr *ngFor="let livro of livros" [class.table-success]>
+            <td [class]='livro'>
                 <!-- quando a tarefa não for concluida vai ficar vermelha(classe do bootstrap), é um property binding tarefa.concluida é a propriedade -->
                 {{ livro.nome }}
                 <!-- interpolação vai exibir na tela a tarefa -->

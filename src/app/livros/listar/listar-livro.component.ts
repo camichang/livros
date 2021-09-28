@@ -15,8 +15,9 @@ export class ListarLivroComponent implements OnInit {
   ngOnInit(): void {
     this.livros = this.listarLivros();
     this.livros = [
-      new Livro(1, "O Luar", 'Jose Diniz', 'Laemmert'),
-      new Livro(2, "Sertões", 'Euclides da Cunha','Laemmert')
+      new Livro(1, "O Luar", 'Jose Diniz', 'Laemmert', true),
+      new Livro(2, "Sertões", 'Euclides da Cunha','Laemmert', false),
+      new Livro(3, )
     ]
   }
 

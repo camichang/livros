@@ -43,14 +43,14 @@ export class LivroService {
     localStorage['livros'] = JSON.stringify(livros);
   }
 
-  // alternarStatus(id: number): void{
-  //   const livros: Livro[] = this.listarLivros();
-  //   livros.forEach((obj, index, objs) => {
-  //     if(id === obj.id){
-  //       objs[index].concluido = obj.concluido;
-  //     }
-    // });
+  alternarStatus(id: number): void{
+    const livros: Livro[] = this.listarLivros();
+    livros.forEach((obj, index, objs) => {
+      if(id === obj.id){
+        objs[index].disponivel = obj.disponivel;
+      }
+    });
 
-    // localStorage['livros'] = JSON.stringify(livros);
-  // }
+    localStorage['livros'] = JSON.stringify(livros);
+  }
 }
